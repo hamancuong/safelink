@@ -28,7 +28,6 @@ function a_to_fa()
 
 function generate() {
   var linkDL = document.getElementById("download"),
-  btn = document.getElementById("btn"),
   notif = document.getElementById("daplong"),
   direklink = document.getElementById("download").href,
   waktu = 11;
@@ -44,7 +43,6 @@ function generate() {
   linkDL.style.display = "inline";
   } else {
   teks_waktu.innerHTML = "<h2>Link will appear in " + waktu.toString() + " Second</h2>";
-  btn.style.display = "none";
   }
   }, 1000);
 }
