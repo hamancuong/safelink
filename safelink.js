@@ -29,8 +29,7 @@ function a_to_fa()
 function generate() {
   var linkDL = document.getElementById("download"),
   notif = document.getElementById("daplong"),
-  direklink = document.getElementById("download").href,
-  waktu = 11;
+  direklink = document.getElementById("download").href;  
   var teks_waktu = document.createElement("span");
   linkDL.parentNode.replaceChild(teks_waktu, linkDL);
   var id;
