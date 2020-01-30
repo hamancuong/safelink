@@ -45,3 +45,17 @@ function generate() {
   }
   }, 1000);
 }
+
+function timer(){
+	waktu=waktu-1;
+	if (waktu <= 0){ 
+		document.getElementById('wpsafe-wait1').style.display = 'none';
+		document.getElementById('wpsafe-wait2').style.display = 'none';
+		document.getElementById('wpsafe-generate').style.display = 'block';
+		document.getElementById('wpsafe-generate2').style.display = 'block';
+		clearInterval(counter);
+		return;
+	}	                    
+	document.getElementById('countdown-number').textContent=waktu;
+	document.getElementById('countdown-number1').textContent=waktu;
+}
